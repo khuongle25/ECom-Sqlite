@@ -8,6 +8,7 @@ namespace ECom.Models
         public int Id { get; set; }
         public int ProductId { get; set; }
         public Product Product {get; set;}
+        [Range(0,100000)]
         public decimal UnitPrice { get; set; }
         public int Quantity {get; set;}
         public int BasketId {get; set;}

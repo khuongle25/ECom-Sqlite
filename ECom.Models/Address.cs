@@ -1,4 +1,5 @@
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 
 namespace ECom.Models
@@ -16,9 +17,12 @@ namespace ECom.Models
             City = city;
             ZipCode = zipcode;
         }
+        [MaxLength(256)]
         public string Street { get;  set; }
+        [MaxLength(100)]
         public string City { get;  set; }
         [DisplayName("Zip Code")]
+        [MaxLength(100)]
         public string ZipCode { get;  set; }
     }
 }

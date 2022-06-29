@@ -1,5 +1,4 @@
 ﻿using ECom.DataAccess.Data;
-using ECom.DataAccess.Migrations;
 using ECom.Models;
 using ECom.Web.Interfaces;
 using ECom.Web.ViewModels;

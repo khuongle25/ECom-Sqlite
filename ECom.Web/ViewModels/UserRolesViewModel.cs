@@ -1,13 +1,5 @@
-﻿using System.Collections.Immutable;
-using System.Runtime.InteropServices.ComTypes;
-using CloudinaryDotNet.Actions;
-using ECom.DataAccess.Data;
-using ECom.Models;
-using ECom.Utility;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+
 
 #nullable disable
 

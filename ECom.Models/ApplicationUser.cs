@@ -11,6 +11,7 @@ public class ApplicationUser : IdentityUser<Int32>
     /// Tên của User
     /// </summary>
     [PersonalData]
+    [MaxLength(100)]
     public string? Name { get; set; }
     /// <summary>
     /// Địa chỉ User

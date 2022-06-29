@@ -15,9 +15,9 @@ builder.WebHost.UseDefaultServiceProvider(options =>
     options.ValidateScopes = false;
     options.ValidateOnBuild = false;
 });
-var connectionString = builder.Configuration.GetConnectionString("ApplicationDbContextConnection");
+var connectionString = builder.Configuration.GetConnectionString("SqlLiteConnection");
     builder.Services.AddDbContext<ApplicationDbContext>(options =>
-        options.UseSqlServer(connectionString));
+        options.UseSqlite(connectionString));
 
 // if(RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
 // {

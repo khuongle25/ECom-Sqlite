@@ -7,11 +7,13 @@ namespace ECom.Models
     {
         [Key]
         public int Id { get; set; }
+        [MaxLength(100)]
         public string ProductName { get; set; }
+        [MaxLength(100)]
         public string ImageUrl { get; set; }
         public int ProductId { get; set; }
         public Product? Product {get; set;}
-
+        [Range(0,100000)]
         public decimal UnitPrice { get; set; }
         public int Units {get; set;}
         public int OrderId {get; set;}

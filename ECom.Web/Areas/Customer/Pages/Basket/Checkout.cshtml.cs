@@ -1,13 +1,10 @@
-﻿using System.Net;
-using CloudinaryDotNet.Actions;
-using ECom.Models;
+﻿using ECom.Models;
 using ECom.Web.Interfaces;
 using ECom.Web.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace ECom.Web.Areas.Customer.Pages.Basket;
 

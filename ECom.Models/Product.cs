@@ -8,6 +8,7 @@ namespace ECom.Models
     public class Product
     {
         public int Id { get; set; }
+        [MaxLength(100)]
         public string Name { get; set; }
 
         [DataType(DataType.Date)]
@@ -19,6 +20,7 @@ namespace ECom.Models
         public int? ManufactureId { get; set; }
         public Manufacture? Manufacture { get; set; }
         public Specification? Specification { get; set; }
+        [MaxLength(256)]
         public string Description {get; set;}
         [Range(0,100000)]
         public decimal Price { get; set; }
@@ -26,6 +28,7 @@ namespace ECom.Models
         public decimal Discount { get; set; }
         public int Quantity { get; set; }
         public List<BasketItem> BasketItems { get; set; } = new List<BasketItem>();
+        [MaxLength(256)]
         public string? ImageUrl{ get; set; }
         [NotMapped]
         public IFormFile? Image { get; set; }
